@@ -9,6 +9,8 @@ export const WordCounter = () => {
             if (text[0] === ' ') return;
             const whiteSpace = countWhiteSpace(text)
             setWordCount(whiteSpace + 1)
+        } else {
+            setWordCount(0)
         }
     }, [text])
 
