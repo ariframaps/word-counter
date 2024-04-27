@@ -30,7 +30,7 @@ export const WordCounter = () => {
     }
 
     return (
-        <div className="h-screen p-24">
+        <main className="h-screen p-24">
             <h1 className="text-3xl font-bold my-10 text-center">Word Counter</h1>
             <div className="max-w-5xl p-5 mx-auto flex flex-col items-stretch gap-5 border rounded-lg">
                 <textarea onChange={(e) => setText(e.target.value)} value={text || ''} name="text" placeholder="halo" className="rounded p-5 text-xl border border-gray-900"></textarea>
@@ -40,6 +40,6 @@ export const WordCounter = () => {
                     <span className="bg-blue-500 text-white p-3 rounded-md text-lg">Word: {wordCount}</span>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
